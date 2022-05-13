@@ -2,8 +2,8 @@ Package: xcxr
 Type: Package
 Title: R API for XCXLab
 Version: 0.1.0
-Author: Eric Prince
-Maintainer: Eric.Prince@CUAnschutz.edu
+Author: Eric Prince [aut, cre]
+Maintainer: Eric Prince <Eric.Prince@CUAnschutz.edu>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: What license is it under?
