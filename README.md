@@ -1,2 +1,4 @@
 # xcxr
-R library for XCXLab
+R API for XCXLab
+
+## Methods
