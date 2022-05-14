@@ -4,7 +4,8 @@ registerShiny <- function(shiny_directory) {
   target_directory <- paste0("/srv/shiny-server/", application_name)
   
   retries = 3
-  while (retries > 0) {
+  success = FALSE
+  while (retries > 0 & isFALSE(success)) {
     if (dir.exists(target_directory)) {
       response <- readline(prompt = "Directory found matching this application. Overwrite? [Y/N] ")
       if (response == "Y") {
@@ -12,6 +13,7 @@ registerShiny <- function(shiny_directory) {
           from = shiny_directory,
           to = target_directory
         )
+        success = TRUE
       } else if (response == "N") {
         return()
       } else {
